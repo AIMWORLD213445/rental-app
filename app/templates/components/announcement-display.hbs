@@ -1,0 +1,6 @@
+{{#each announcements as |announcement|}}
+  <p>
+    {{announcement.message}}
+    <button {{action 'deleteAnnouncement' announcement}}>Delete Announcement</button>
+  </p>
+{{/each}}
